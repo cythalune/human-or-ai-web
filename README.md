@@ -54,21 +54,6 @@ Google Gemini API (AI-generated answers)
 
 Sessions (game state management)
 
-📂 Project Structure
-├── app.py                # Main Flask application
-├── game_logic.py         # Core game logic (ported from CS50P)
-├── qa.json               # Human-written questions and answers
-├── templates/
-│   ├── layout.html
-│   ├── index.html
-│   ├── game.html
-│   └── result.html
-├── static/
-│   └── styles.css
-├── leaderboard.db        # SQLite database
-├── requirements.txt
-└── README.md
-
 🔑 API Setup (Required)
 
 This project uses the Gemini API.
