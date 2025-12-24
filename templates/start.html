@@ -1,0 +1,17 @@
+{% extends "layout.html" %}
+
+{% block title %}Start Game{% endblock %}
+
+{% block content %}
+<h2>Enter your name</h2>
+
+<form method="post">
+    <div class="mb-3">
+        <input type="text" name="name" class="form-control" placeholder="Your name" required>
+    </div>
+
+    <button type="submit" class="btn btn-success">
+        Start Playing
+    </button>
+</form>
+{% endblock %}

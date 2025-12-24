@@ -1,0 +1,26 @@
+{% extends "layout.html" %}
+
+{% block title %}Round {{ round }}{% endblock %}
+
+{% block content %}
+<h4>Round {{ round }} of 5</h4>
+
+<hr>
+
+<p><strong>Question:</strong></p>
+<p>{{ question }}</p>
+
+<p><strong>Answer:</strong></p>
+<div class="answer-box">
+    {{ answer }}
+</div>
+
+<form method="post" class="mt-4">
+    <button name="guess" value="H" class="btn btn-outline-primary me-2">
+        Human
+    </button>
+    <button name="guess" value="A" class="btn btn-outline-danger">
+        AI
+    </button>
+</form>
+{% endblock %}

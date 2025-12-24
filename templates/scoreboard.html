@@ -1,0 +1,28 @@
+{% extends "layout.html" %}
+
+{% block title %}Scoreboard{% endblock %}
+
+{% block content %}
+<h2>Top Players</h2>
+
+<table class="table table-striped mt-3">
+    <thead>
+        <tr>
+            <th>#</th>
+            <th>Name</th>
+            <th>Score</th>
+            <th>Time (s)</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for row in scores %}
+        <tr>
+            <td>{{ loop.index }}</td>
+            <td>{{ row.name }}</td>
+            <td>{{ row.score }}</td>
+            <td>{{ row.time_taken }}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% endblock %}
